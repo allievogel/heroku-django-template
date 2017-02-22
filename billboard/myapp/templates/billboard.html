@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      {% load staticfiles %}
+       {% load staticfiles %}
+
    <link rel="stylesheet" type="text/css" href="{% static '/CSS/billboard.css' %}">
 
     <meta charset="UTF-8">
@@ -13,30 +14,34 @@
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" type="text/css" href="../static/CSS/billboard.css">
+{#   <link rel="stylesheet" type="text/css" href="../static/CSS/billboard.css">#}
   <title>Billboard</title>
   </head>
   <body>
+
   <div class="container">
  <p id="billboard">Billboard</p>
 </div>
 <!–– creates message template -->
+{#   {% if posts %}#}
+
+  {% for p in messages %}
 <div class="mainBody">
- {% if posts %}
-            {% for post in posts %}
+
   <div class = "row">
    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
   <fieldset class = "fieldset">
-   <legend class="legend" id ="pubdate">{{post.pub_date|date:"m/d/Y"}}</legend>
-    <p class = "posttitle">{{ post.post_title }}</p>
-    <p class = "postbody">{{ post.post_msg }}</p>
-    <p class = "postsignature">{{ post.post_sign }}</p>
+   <legend class="legend" id ="pubdate">{{p.pub_date|date:"m/d/Y"}}</legend>
+    <p class = "posttitle">{{ p.post_title }}</p>
+    <p class = "postbody">{{ p.post_msg }}</p>
+    <p class = "postsignature">{{ p.post_sign }}</p>
   </fieldset>
 </div>
 </div>
 {% endfor %}
-        {% else %}
- {% endif %}
+{#        {% else %}#}
+{#       <div>No messages</div>#}
+{# {% endif %}#}
 
 <!–– FORM START creates submit form template -->
 <div class = "container" id = "newpostdiv" >

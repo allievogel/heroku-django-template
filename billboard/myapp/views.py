@@ -14,8 +14,10 @@ from django.utils import timezone
 
 def index(request):
     posts = Post.objects.all()
+    context={}
     post_list = posts.order_by('-post_pub_date')[:5]
-    return render(request, 'billboard.html', {'posts':post_list})
+    context['messages']=post_list
+    return render(request, 'billboard.html', context)
 
 @csrf_exempt
 def delete_post(request):
