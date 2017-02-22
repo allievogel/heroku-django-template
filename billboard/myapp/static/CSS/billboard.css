@@ -1,0 +1,129 @@
+.posttitle{
+    font-family: Anton, sans-serif;
+    size: 30px;
+    color: #00b7ef;
+    text-align: left;
+}
+
+#billboard {
+    font-family: Anton, sans-serif;
+    size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.postsignature {
+    font-family: Pinyon Script, cursive;
+    size: 24px;
+    color: black;
+    text-align: right;
+}
+
+.postbody {
+    font-family: Arial, sans-serif;
+    size: 16px;
+    color: #c1bfc0;
+    text-align: center;
+}
+
+.legend {
+    display: block;
+    width: auto;
+    padding: 0 5px;
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+    border-bottom: none;
+}
+
+.fieldset {
+    border: #00b7ef 3px solid;
+    padding: 5px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.secondfieldset {
+    border: #00b7ef 3px dashed;
+    padding: 5px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.submitButtons{
+    border: black 1px dashed;
+    padding: 5px;
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+.AuthorName{
+    margin-left:65%;
+    margin-top: 10px;
+}
+
+.TitleName{
+    margin-bottom: 10px;
+}
+
+.createnewButton{
+    border: black 1px dashed;
+    padding: 5px;
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+.textadd{
+    font-family: Arial, sans-serif;
+    size: 24px;
+    color: black;
+    text-align: center;
+}
+
+.btn.btn-default{
+    height: 30px;
+    width: 35px;
+    border: none;
+}
+
+.delete_post{
+    background-color: red;
+    height: 30px;
+    width: 35px;
+}
+
+.green {
+    background-color: #66CDAA;
+    height: 30px;
+    width: 35px;
+}
+
+.confirm_btn {
+    background-color: #66CDAA;
+    height: 30px;
+    width: 35px;
+}
+
+.btn.btn-default:hover {
+    background-color: darkgray;
+}
+
+.fa{
+    font-size: 16px;
+}
+
+.glyphicon{
+    color: white;
+}
